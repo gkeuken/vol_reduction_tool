@@ -2,11 +2,9 @@
 Installing the sample code for z/OS Volume Reduction Tool
 
 
-- Download feucvoli in binary (sftp) to z/OS Unix System Services and ensure it's executable
-- Download zdt.dump.trs in binary to z/OS sequential, ensure RECFM=FB,LRECL=1024
-- Copy and Execute the restore JCL after updating statements having "??????" as necessary
-- Execute feucvoli without any parameters for Help.
-
+- Transfer feucvoli in binary (sftp) to z/OS Unix System Services and ensure it's executable
+- Upload zdt.load.xmit in binary to z/OS, ensure RECFM=FB,LRECL=80
+- Receive inds(zdt.load.xmit) 
 
 Note you could do a git clone from z/OS to obtain the files directly into USS, however if doing so you will have to convert the restore JCL to ibm-1047. This can be done by running command: 
    - iconv -f iso8859-1 -t ibm-1047 restore > restore.jcl
