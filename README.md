@@ -7,4 +7,4 @@ Installing the sample code for z/OS Volume Reduction Tool
 - Receive inds(zdt.load.xmit) 
 - execute feucvoli without any parameters for help information
 
-Note you could do a git clone from z/OS to obtain the files directly into USS, then send zdt.load.xmit from USS to an MVS Sequential (Fixed Block 80) and perform RECEIVE INDS('ZDT.LOAD.XMIT') 
+Note you could do a git clone directly from z/OS to obtain the files directly into USS, then send zdt.load.xmit from USS to an MVS Sequential (Fixed Block 80) and perform RECEIVE INDS('ZDT.LOAD.XMIT') 
